@@ -72,33 +72,13 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
             const SizedBox(height: 12),
-            const Text(
-              'Tap Home to return to the main app',
-              style: TextStyle(fontSize: 12),
-            ),
+            
           ],
         ),
       ),
 
       // 🔹 Home button at bottom
-      bottomNavigationBar: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: ElevatedButton.icon(
-            style: ElevatedButton.styleFrom(
-              minimumSize: const Size(double.infinity, 48),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-            onPressed: () {
-              Navigator.pop(context); // goes back to main home
-            },
-            icon: const Icon(Icons.home),
-            label: const Text("Home"),
-          ),
-        ),
-      ),
+      
     );
   }
 }
